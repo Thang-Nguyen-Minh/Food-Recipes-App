@@ -1,4 +1,4 @@
 const getRecipes = async (req, res) => {
-    res.send('Hello World!');
+    res.send('Recipes List!');
 }
 module.exports = {getRecipes};
