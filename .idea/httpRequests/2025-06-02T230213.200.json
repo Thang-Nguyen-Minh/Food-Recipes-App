@@ -1,0 +1,9 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYW5naGFuaEBnbWFpbC5jb20iLCJpZCI6IjY4M2RjYTQ4ZDYxMWJhNDQ3MjVjYzYxOSIsImlhdCI6MTc0ODg4MDEzM30.nMMBs2wrrRwgDVc8RtAP87I_2Xmqurx5buRmaLL4vMc",
+  "user": {
+    "_id": "683dca48d611ba44725cc619",
+    "email": "thanghanh@gmail.com",
+    "password": "$2b$10$yxSfM9kb0Ai.82G.UMSsou5RenFOjlKXfGGCQXW0pzayF.xk3xYum",
+    "__v": 0
+  }
+}

@@ -1,3 +1,163 @@
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230213.200.json
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230132.500.html
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230043.500.html
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230016.404.html
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225952.404.html
+
+###
+
+POST http://localhost:5000/signUp
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225904.200.json
+
+###
+
+POST http://localhost:5000/signUp
+Content-Type: application/json
+Content-Length: 61
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thang@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225319.200.json
+
+###
+
+POST http://localhost:5000/signUp
+Content-Type: application/json
+Content-Length: 62
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "mthang@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225224.200.json
+
+###
+
+POST http://localhost:5000/signUp
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "nmthang@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225215.400.json
+
+###
+
+POST http://localhost:5000/signUp
+Content-Type: application/json
+Content-Length: 63
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "nmthang@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T225100.200.json
+
+###
+
 PUT http://localhost:5000/recipe/683d6dc858b6cd562b70b991
 Content-Type: application/json
 Content-Length: 107

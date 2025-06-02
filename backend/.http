@@ -1,11 +1,9 @@
-PUT http://localhost:5000/recipe/683d6dc858b6cd562b70b991
+POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "title" : "SIUU",
-    "ingredients":  "SIUU",
-    "instructions": "SIUU",
-    "time" : "2025-13-04"
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
 }
 
 ###

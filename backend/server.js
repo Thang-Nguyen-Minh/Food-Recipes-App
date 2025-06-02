@@ -9,8 +9,10 @@ connectDb();
 const port = process.env.PORT;
 const recipesRoutes = require('./routes/recipe');
 const userRoutes=require("./routes/user");
+
 app.use("/",userRoutes);
 app.use("/recipe", recipesRoutes);
+
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
 })
