@@ -5,7 +5,6 @@ import Footer from "../components/Footer.jsx";
 export default function Home (){
     return (
         <>
-            <Navbar />
             <section className='home'>
                 <div className='left'>
                     <h1>Food Recipe</h1>
@@ -24,7 +23,6 @@ export default function Home (){
             {/*<div className='recipe'>*/}
             {/*    <RecipeItems />*/}
             {/*</div>*/}
-            <Footer/>
         </>
     )
 }
