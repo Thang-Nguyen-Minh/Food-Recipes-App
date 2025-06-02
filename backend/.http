@@ -1,11 +1,11 @@
-GET http://localhost:5000/recipe
+PUT http://localhost:5000/recipe/683d6dc858b6cd562b70b991
 Content-Type: application/json
 
 {
     "title" : "SIUU",
     "ingredients":  "SIUU",
     "instructions": "SIUU",
-    "time" : "2025"
+    "time" : "2025-13-04"
 }
 
 ###

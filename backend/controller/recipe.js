@@ -18,7 +18,18 @@ const addRecipe = async (req, res) => {
     return res.json(newRecipe);
 }
 const editRecipe = async (req, res) => {
-    res.send('Recipes List!');
+    const {title,ingredients,instructions,time} = req.body;
+    let recipe = await Recipes.findById(req.params.id);
+    try{
+        if(recipe) {
+            await Recipes.findByIdAndUpdate(req.params.id, req.body, {
+                new: true
+            })
+            res.json({title,ingredients,instructions,time});
+        }
+    }catch(err){
+        res.status(400).json({message:"Error updating Recipe"});
+    }
 }
 const deleteRecipe = async (req, res) => {
     res.send('Recipes List!');
