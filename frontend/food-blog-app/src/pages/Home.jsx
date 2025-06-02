@@ -1,8 +1,11 @@
 import React from "react";
 import foodRecipe from '../assets/foodRecipe.jpg'
+import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 export default function Home (){
     return (
         <>
+            <Navbar />
             <section className='home'>
                 <div className='left'>
                     <h1>Food Recipe</h1>
@@ -21,6 +24,7 @@ export default function Home (){
             {/*<div className='recipe'>*/}
             {/*    <RecipeItems />*/}
             {/*</div>*/}
+            <Footer/>
         </>
     )
 }
