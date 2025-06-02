@@ -1,4 +1,4 @@
-POST http://localhost:5000/login
+GET http://localhost:5000/user/683dca48d611ba44725cc619
 Content-Type: application/json
 
 {

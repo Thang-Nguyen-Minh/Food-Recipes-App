@@ -1,3 +1,35 @@
+GET http://localhost:5000/user/683dca48d611ba44725cc619
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 65
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230455.200.json
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+Content-Length: 65
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "email" : "thanghanh@gmail.com",
+    "password":  "12345"
+}
+
+<> 2025-06-02T230427.200.json
+
+###
+
 POST http://localhost:5000/login
 Content-Type: application/json
 Content-Length: 65
