@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 const dotenv = require('dotenv').config();
+const connectDb=require("./config/connectionDb.js");
+connectDb();
 const port = process.env.PORT;
 const recipesRoutes = require('./routes/recipe');
 app.use("/recipe", recipesRoutes);
