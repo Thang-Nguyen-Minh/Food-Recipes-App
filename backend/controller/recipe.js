@@ -4,7 +4,8 @@ const getRecipes = async (req, res) => {
     return res.json(recipes);
 }
 const getRecipeById = async (req, res) => {
-    res.send('Recipes List!');
+    const recipes = await Recipes.findById(req.params.id);
+    return res.json(recipes);
 }
 const addRecipe = async (req, res) => {
     const {title,ingredients,instructions,time} = req.body;
