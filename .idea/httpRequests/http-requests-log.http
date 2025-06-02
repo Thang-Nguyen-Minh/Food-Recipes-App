@@ -1,0 +1,90 @@
+PUT http://localhost:5000/recipe/683d6dc858b6cd562b70b991
+Content-Type: application/json
+Content-Length: 107
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025-13-04"
+}
+
+<> 2025-06-02T163323.200.json
+
+###
+
+GET http://localhost:5000/recipe/683d6dc858b6cd562b70b991
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 101
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025"
+}
+
+<> 2025-06-02T162905.200.json
+
+###
+
+GET http://localhost:5000/recipe
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 101
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025"
+}
+
+<> 2025-06-02T162850.200.json
+
+###
+
+GET http://localhost:5000/recipe
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 101
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025"
+}
+
+<> 2025-06-02T162646.200.json
+
+###
+
+POST http://localhost:5000/recipe
+Content-Type: application/json
+Content-Length: 101
+User-Agent: IntelliJ HTTP Client/WebStorm 2024.3.6
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025"
+}
+
+<> 2025-06-02T162424.200.json
+
+###
+
