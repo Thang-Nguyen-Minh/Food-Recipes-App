@@ -1,6 +1,7 @@
 const Recipes = require('../models/recipe');
 const getRecipes = async (req, res) => {
-    res.send('Recipes List!');
+    const recipes = await Recipes.find({});
+    return res.json(recipes);
 }
 const getRecipeById = async (req, res) => {
     res.send('Recipes List!');

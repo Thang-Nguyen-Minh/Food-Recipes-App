@@ -1,0 +1,11 @@
+POST http://localhost:5000/recipe
+Content-Type: application/json
+
+{
+    "title" : "SIUU",
+    "ingredients":  "SIUU",
+    "instructions": "SIUU",
+    "time" : "2025"
+}
+
+###
