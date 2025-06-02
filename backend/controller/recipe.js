@@ -32,6 +32,14 @@ const editRecipe = async (req, res) => {
     }
 }
 const deleteRecipe = async (req, res) => {
-    res.send('Recipes List!');
+    try{
+        const recipe = await Recipes.findByIdAndDelete(req.params.id);
+        if(!recipe) {
+            res.status(404).json({message:"No recipe found"});
+        }
+        return res.json({message:"Recipe deleted"});
+    }catch(err){
+        res.status(500).json({message:"Error deleting Recipe"});
+    }
 }
 module.exports = {getRecipes,getRecipeById,addRecipe,editRecipe,deleteRecipe};
