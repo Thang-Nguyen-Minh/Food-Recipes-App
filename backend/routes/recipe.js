@@ -1,7 +1,6 @@
 const express = require('express');
+const {getRecipes} = require("../controller/recipe");
 const app = express();
 const router = express.Router();
-router.get('/', (req, res) => {
-    res.send('Hello World!');
-})
+router.get("/",getRecipes)
 module.exports = router;
