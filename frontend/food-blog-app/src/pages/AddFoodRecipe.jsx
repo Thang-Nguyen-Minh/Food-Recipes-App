@@ -10,31 +10,16 @@ export default function AddFoodRecipe() {
         setRecipeData(pre => ({ ...pre, [e.target.name]: val }))
     }
     const onHandleSubmit = async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData();
-        formData.append("title", recipeData.title);
-        formData.append("time", recipeData.time);
-        formData.append("instructions", recipeData.instructions);
-        formData.append("file", recipeData.file);
-
-        // ✅ Chuyển array thành chuỗi ngăn cách bằng dấu phẩy
-        formData.append("ingredients", recipeData.ingredients?.join(", "));
-
-        try {
-            await axios.post("http://localhost:5000/recipe", formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                    'authorization': 'bearer ' + localStorage.getItem("token")
-                }
-            });
-            navigate("/");
-        } catch (err) {
-            console.error("❌ Upload error:", err.response?.data || err.message);
-        }
-    };
-
-
+        e.preventDefault()
+        console.log(recipeData)
+        await axios.post("http://localhost:5000/recipe", recipeData,{
+            headers:{
+                'Content-Type':'multipart/form-data',
+                'authorization':'bearer '+localStorage.getItem("token")
+            }
+        })
+            .then(() => navigate("/"))
+    }
     return (
         <>
             <div className='container'>

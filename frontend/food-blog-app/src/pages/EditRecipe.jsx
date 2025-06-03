@@ -1,56 +1,43 @@
 import axios from 'axios'
-import React, {useEffect, useState} from 'react'
-import {useNavigate, useParams} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 
 export default function EditRecipe() {
     const [recipeData, setRecipeData] = useState({})
     const navigate = useNavigate()
-    const {id} = useParams()
-    useEffect(() => {
-        const getData = async () => {
+    const{id}=useParams()
+
+    useEffect(()=>{
+        const getData=async()=>{
             await axios.get(`http://localhost:5000/recipe/${id}`)
-                .then(response => {
+                .then(response=>{
                     let res=response.data
                     setRecipeData({
-                        title: res.title,
+                        title:res.title,
                         ingredients:res.ingredients.join(","),
                         instructions:res.instructions,
-                        time: res.time,
+                        time:res.time
                     })
                 })
         }
         getData()
     },[])
+
     const onHandleChange = (e) => {
         let val = (e.target.name === "ingredients") ? e.target.value.split(",") : (e.target.name === "file") ? e.target.files[0] : e.target.value
         setRecipeData(pre => ({ ...pre, [e.target.name]: val }))
     }
     const onHandleSubmit = async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData();
-        formData.append("title", recipeData.title);
-        formData.append("time", recipeData.time);
-        formData.append("instructions", recipeData.instructions);
-        formData.append("file", recipeData.file);
-
-        // ✅ Chuyển array thành chuỗi ngăn cách bằng dấu phẩy
-        formData.append("ingredients", recipeData.ingredients?.join(", "));
-
-        try {
-            await axios.post(`http://localhost:5000/recipe/${id}`, formData, {
-                headers: {
-                    'Content-Type': 'multipart/form-data',
-                    'authorization': 'bearer ' + localStorage.getItem("token")
-                }
-            });
-            navigate("/");
-        } catch (err) {
-            console.error("❌ Upload error:", err.response?.data || err.message);
-        }
-    };
-
-
+        e.preventDefault()
+        console.log(recipeData)
+        await axios.put(`http://localhost:5000/recipe/${id}`, recipeData,{
+            headers:{
+                'Content-Type':'multipart/form-data',
+                'authorization':'bearer '+localStorage.getItem("token")
+            }
+        })
+            .then(() => navigate("/myRecipe"))
+    }
     return (
         <>
             <div className='container'>
