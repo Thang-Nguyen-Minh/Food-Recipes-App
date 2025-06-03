@@ -19,7 +19,7 @@ export default function RecipeItems() {
                                 <div className="title">{item.title}</div>
                             </div>
                             <div className='icons'>
-                                <div className='timer'><BsStopwatchFill/>30min</div>
+                                <div className='timer'><BsStopwatchFill/>{item.time}</div>
                                 {(!path) ? <FaHeart /> :
                                 <div className='action'>
                                     <Link
