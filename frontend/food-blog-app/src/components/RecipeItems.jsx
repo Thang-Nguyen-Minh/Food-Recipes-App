@@ -10,7 +10,9 @@ export default function RecipeItems() {
     const recipes = useLoaderData();
     let path = window.location.pathname==="/myRecipe" ? true : false;
     const [allRecipes, setAllRecipes] = useState();
+    const [isFavRecipe, setIsFavRecipe] = useState(false);
     console.log(allRecipes)
+    let favItems=JSON.parse(localStorage.getItem("fav")) ?? [];
     useEffect(()=>{
         setAllRecipes(recipes)
     },[recipes])
@@ -22,6 +24,14 @@ export default function RecipeItems() {
             })
         setAllRecipes(recipes=>recipes.filter(recipe=>recipe.id !== id))
     }
+    const favRecipe = (item)=>{
+        let filterItem=favItems.filter(recipe=>recipe._id !== item._id)
+        favItems=favItems.filter(recipe=>recipe._id !== item._id).length===0
+            ? [...favItems,item] : filterItem
+        localStorage.setItem("fav",JSON.stringify(favItems))
+        setIsFavRecipe(pre=>!pre)
+    }
+
     return (
         <div className='card-container'>
             {
@@ -34,7 +44,8 @@ export default function RecipeItems() {
                             </div>
                             <div className='icons'>
                                 <div className='timer'><BsStopwatchFill/>{item.time}</div>
-                                {(!path) ? <FaHeart /> :
+                                {(!path) ? <FaHeart onClick={()=>favRecipe(item)}
+                                                    style={{color: (favItems.some(res=>res._id === item._id)) ? "red" : ""}}/> :
                                 <div className='action'>
                                     <Link
                                         to={`/editRecipe/${item._id}`}
