@@ -1,5 +1,5 @@
 import React from 'react'
-import {useLoaderData} from "react-router-dom";
+import {Link, useLoaderData} from "react-router-dom";
 import foodRecipe from '../assets/foodRecipe.jpg'
 import {BsStopwatchFill} from "react-icons/bs";
 import {FaHeart} from "react-icons/fa";
@@ -22,7 +22,12 @@ export default function RecipeItems() {
                                 <div className='timer'><BsStopwatchFill/>30min</div>
                                 {(!path) ? <FaHeart /> :
                                 <div className='action'>
-                                    <FaEdit/>
+                                    <Link
+                                        to={`/editRecipe/${item._id}`}
+                                        className="editIcon"
+                                    >
+                                        <FaEdit/>
+                                    </Link>
                                     <MdDelete className="deleteIcon"/>
                                 </div>
                                 }

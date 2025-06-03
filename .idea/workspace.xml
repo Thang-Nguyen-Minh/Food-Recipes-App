@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98afe32c-4c0c-4765-a23d-8c83fd9aa690" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/EditRecipe.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +20,8 @@
       <list>
         <option value="HTTP Public Environment File" />
         <option value="HTTP Private Environment File" />
-        <option value="JSX File" />
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
@@ -41,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/backend/server.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/food-blog-app/src/components/InputForm.jsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/food-blog-app/src/components/Navbar.jsx" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/frontend/food-blog-app/src/pages/Home.jsx" root0="SKIP_INSPECTION" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -110,7 +113,7 @@
       <workItem from="1748851184569" duration="9345000" />
       <workItem from="1748874014899" duration="8229000" />
       <workItem from="1748920049352" duration="2249000" />
-      <workItem from="1748938407293" duration="10357000" />
+      <workItem from="1748938407293" duration="11024000" />
     </task>
     <servers />
   </component>
