@@ -7,12 +7,9 @@
     <list default="true" id="98afe32c-4c0c-4765-a23d-8c83fd9aa690" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controller/recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/recipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/recipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/AddFoodRecipe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/AddFoodRecipe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1748851184569" duration="9345000" />
       <workItem from="1748874014899" duration="8229000" />
       <workItem from="1748920049352" duration="2249000" />
-      <workItem from="1748938407293" duration="4686000" />
+      <workItem from="1748938407293" duration="6246000" />
     </task>
     <servers />
   </component>

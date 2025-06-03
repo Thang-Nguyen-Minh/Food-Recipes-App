@@ -1,7 +1,5 @@
 import React from "react";
 import foodRecipe from '../assets/foodRecipe.jpg'
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
 import RecipeItems from "../components/RecipeItems.jsx";
 import {useNavigate} from "react-router-dom";
 export default function Home (){
