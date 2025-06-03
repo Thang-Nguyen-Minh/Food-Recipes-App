@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98afe32c-4c0c-4765-a23d-8c83fd9aa690" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/EditRecipe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/pages/EditRecipe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/food-blog-app/src/components/RecipeItems.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <workItem from="1748851184569" duration="9345000" />
       <workItem from="1748874014899" duration="8229000" />
       <workItem from="1748920049352" duration="2249000" />
-      <workItem from="1748938407293" duration="12282000" />
+      <workItem from="1748938407293" duration="12579000" />
     </task>
     <servers />
   </component>
