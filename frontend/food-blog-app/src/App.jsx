@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home';
 import MainNavigation from "./components/MainNavigation.jsx";
 import axios from "axios";
+import AddFoodRecipe from "./pages/AddFoodRecipe.jsx";
 const getAllRecipes=async()=>{
     let allRecipes=[]
     await axios.get('http://localhost:5000/recipe').then(res=>{
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       {path:'/',element:<Home/>,loader: getAllRecipes},
       {path:'/myRecipe',element:<Home/>},
       {path:'/favRecipe',element:<Home/>},
+      {path:'/addRecipe',element:<AddFoodRecipe/>},
   ]}
 ])
 function App() {
