@@ -13,6 +13,8 @@ const getAllRecipes=async()=>{
 const router = createBrowserRouter([
   {path:'/',element:<MainNavigation/>,children:[
       {path:'/',element:<Home/>,loader: getAllRecipes},
+      {path:'/myRecipe',element:<Home/>},
+      {path:'/favRecipe',element:<Home/>},
   ]}
 ])
 function App() {

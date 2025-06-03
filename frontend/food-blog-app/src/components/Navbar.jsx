@@ -20,7 +20,7 @@ export default function Navbar(){
                 </ul>
             </header>
             {isOpen &&<Modal onClose={() => setIsOpen(false)}>
-                <InputForm/>
+                <InputForm setIsOpen={() => setIsOpen(false)}/>
             </Modal>}
         </>
     )
