@@ -3,10 +3,11 @@ import {useLoaderData} from "react-router-dom";
 import foodRecipe from '../assets/foodRecipe.jpg'
 import {BsStopwatchFill} from "react-icons/bs";
 import {FaHeart} from "react-icons/fa";
-
-
+import {FaEdit} from "react-icons/fa";
+import {MdDelete} from "react-icons/md";
 export default function RecipeItems() {
     const allRecipes = useLoaderData();
+    let path = window.location.pathname==="/myRecipe" ? true : false;
     return (
         <div className='card-container'>
             {
@@ -19,7 +20,12 @@ export default function RecipeItems() {
                             </div>
                             <div className='icons'>
                                 <div className='timer'><BsStopwatchFill/>30min</div>
-                                <FaHeart />
+                                {(!path) ? <FaHeart /> :
+                                <div className='action'>
+                                    <FaEdit/>
+                                    <MdDelete className="deleteIcon"/>
+                                </div>
+                                }
                             </div>
                         </div>
                     )
